@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Iceland|Rajdhani');
+
+/*Base Styles*/
+
+*	{
+	box-sizing: border-box;
+}
+
+body	{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: sans-serif;
+	font-size: .85em;
+}
+
+a	{
+	color: maroon;
+	text-decoration: none;
+}
+
+h1	{
+	font-size: 2rem;
+	color: #aec6cf;
+	text-align: center;
+}
+
+h2	{
+	font-size: 1,5rem;
+	text-align: center;
+}
+
+h1,h2,h3	{
+	width: 100%;
+	padding: 10px;
+	margin: 0 auto;
+	font-family: 'iceland', sans-serif;
+}
+
+p	{
+	margin: 0 auto;
+	padding: 20px 10px 20px 25px;
+	width: 100%;
+	max-width: 700px;
+}
+
+p.sub-text	{
+	padding: 20px 10px;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	font-family: 'Amatic SC';
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+
+ul	{
+	margin: 0 auto;
+}
+
+
+/*HEADER*/
+
+header	{
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*MAIN**********/
+
+main	{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.tech-r,
+.interview,
+.digital-d	{
+	margin: 30px 0 0 0;
+}
+
+
+/*APPLICATION VIDEO*/
+
+.interview video	{
+	background: #000;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 10px;
+	display: block;
+}
+
+
+
+
+/*TECHNICAL REQUIRMENTS**************/
+
+/*STORYBOARD*/
+
+.storyboard	{
+	width: 100%;
+	/*list-style: none;
+	padding: 0;*/
+	max-width: 800px;
+	/*display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;*/
+}
+
+.storyboard li	{
+	padding: 0;
+	margin: 15px;
+}
+
+img.frame	{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: 300px;
+	display: block;
+}
+
+
+/*FOOTER*/
+
+.copyright	{
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 600px)	{
+	header	{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	h1	{
+		text-align: left;
+	}
+	
+	h3	{
+		max-width: 700px;
+	}
+	
+	p.sub-text	{
+		text-align: right;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
