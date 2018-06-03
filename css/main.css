@@ -19,6 +19,10 @@ a	{
 	text-decoration: none;
 }
 
+a:hover	{
+	text-decoration: underline;
+}
+
 h1	{
 	font-size: 2rem;
 	color: #aec6cf;
@@ -28,6 +32,10 @@ h1	{
 h2	{
 	font-size: 1,5rem;
 	text-align: center;
+}
+
+h3	{
+	font-size: 1.17rem;
 }
 
 h1,h2,h3	{
@@ -78,7 +86,6 @@ header	{
 
 main	{
 	width: 100%;
-	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -88,6 +95,28 @@ main	{
 .digital-d	{
 	margin: 30px 0 0 0;
 }
+
+
+/*CRITIQUE*/
+
+.critique	{
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	
+}
+
+.critique h3	{
+	font-size: 1rem;
+}
+
+.critique img	{
+	width: 100%;
+	max-width: 280px;
+	margin: 0 auto;
+	display: block;
+}
+
 
 
 /*APPLICATION VIDEO*/
@@ -132,6 +161,26 @@ img.frame	{
 }
 
 
+/*ORIGINAL ART*/
+
+.originalart	{
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+
+img.art	{
+	width: 100%;
+	max-width: 350px;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+
+
 /*FOOTER*/
 
 .copyright	{
@@ -142,6 +191,13 @@ img.frame	{
 }
 
 
+/*CLEARFIX*/
+
+.clearfix::after	{
+	content: "";
+	display: table;
+	clear: both;
+}
 
 /*MEDIA QUERIES*/
 
@@ -161,6 +217,44 @@ img.frame	{
 	
 	p.sub-text	{
 		text-align: right;
+	}
+	
+	/*MAIN*/
+	
+	main	{
+		max-width: 900px;
+	}
+	
+	/*CRITIQUE*/
+	
+	.fanficimg	{
+		/*width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+		display: block;*/
+		float: left;
+		clear: both;
+		padding: 20px;
+		transition: transform .4s;
+	}
+	
+	.fanficimg:nth-child(2n+1)	{
+		float: right;
+		text-align: left;
+	}
+	
+	.fanficimg:nth-child(2n+1):hover,
+	.fanficimg:nth-child(2n+1):focus	{
+		transform: scale(1.5) translateX(-50px);
+		padding: 0;
+		margin: 0;
+	}
+	
+	.fanficimg:hover,
+	.fanficimg:focus	{
+		transform: scale(1.5) translateX(60px);
+		padding: 0;
+		margin: 0;
 	}
 }
 
