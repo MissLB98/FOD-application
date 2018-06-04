@@ -15,7 +15,7 @@ body	{
 }
 
 a	{
-	color: maroon;
+	color: aqua;
 	text-decoration: none;
 }
 
@@ -110,9 +110,9 @@ main	{
 	font-size: 1rem;
 }
 
-.critique img	{
+.fanficimg img	{
 	width: 100%;
-	max-width: 280px;
+	max-width: 300px;
 	margin: 0 auto;
 	display: block;
 }
@@ -175,8 +175,8 @@ img.art	{
 	width: 100%;
 	max-width: 350px;
 	display: inline-block;
-	margin: 0 auto;
-	padding: 20px;
+	margin: 15px;
+	border: 2px solid #000;
 }
 
 
@@ -228,33 +228,10 @@ img.art	{
 	/*CRITIQUE*/
 	
 	.fanficimg	{
-		/*width: 100%;
-		max-width: 300px;
-		margin: 0 auto;
-		display: block;*/
-		float: left;
+		float: right;
 		clear: both;
 		padding: 20px;
-		transition: transform .4s;
-	}
-	
-	.fanficimg:nth-child(2n+1)	{
-		float: right;
-		text-align: left;
-	}
-	
-	.fanficimg:nth-child(2n+1):hover,
-	.fanficimg:nth-child(2n+1):focus	{
-		transform: scale(1.5) translateX(-50px);
-		padding: 0;
-		margin: 0;
-	}
-	
-	.fanficimg:hover,
-	.fanficimg:focus	{
-		transform: scale(1.5) translateX(60px);
-		padding: 0;
-		margin: 0;
+		margin: 0; 
 	}
 }
 
