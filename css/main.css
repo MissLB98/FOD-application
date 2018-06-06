@@ -15,8 +15,9 @@ body	{
 }
 
 a	{
-	color: aqua;
+	color: #06a6cc;
 	text-decoration: none;
+	font-weight: 600;
 }
 
 a:hover	{
@@ -110,10 +111,11 @@ main	{
 	font-size: 1rem;
 }
 
-.fanficimg img	{
+.critique img	{
 	width: 100%;
 	max-width: 300px;
 	margin: 0 auto;
+	padding: 0;
 	display: block;
 }
 
@@ -138,10 +140,12 @@ main	{
 /*STORYBOARD*/
 
 .storyboard	{
+	position: relative;
+	padding: 0;
+	margin: 0 auto;
 	width: 100%;
 	/*list-style: none;
 	padding: 0;*/
-	max-width: 800px;
 	/*display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;*/
@@ -175,7 +179,6 @@ img.art	{
 	width: 100%;
 	max-width: 350px;
 	display: inline-block;
-	margin: 15px;
 	border: 2px solid #000;
 }
 
@@ -221,20 +224,26 @@ img.art	{
 	
 	/*MAIN*/
 	
-	main	{
+	.tech-r	{
 		max-width: 900px;
 	}
 	
 	/*CRITIQUE*/
 	
-	.fanficimg	{
+	.critique img	{
 		float: right;
 		clear: both;
 		padding: 20px;
 		margin: 0; 
 	}
+	
+	
+	/*ORIGINAL ART*/
+	
+	img.art	{
+		margin: 15px;
+	}
 }
-
 
 
 
